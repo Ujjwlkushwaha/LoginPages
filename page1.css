@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(86, 68, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#left{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 55px auto;
+}
+
+#left h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgb(58, 46, 71);
+}
+
+#left p , lebel{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(58, 46, 71);
+}
+
+#left label{
+    font-size: 11px;
+}
+
+#left input[type=email]{
+    margin: 10px 0;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgb(74, 72, 72);
+}
+
+input[type=submit]{
+    background-color:rgb(58, 46, 71);
+    height: 45px;
+}
+
+#list{
+    line-height: 0px;
+}
+#list img{
+    width: 18px;
+    margin-right: 5px;
+}
+
+#right{
+    width: 300px;
+}
+#right img{
+    margin: 30px auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:650px) {
+
+    #left{
+        width: 100%;
+        margin:40px;
+    }
+    
+    #right{
+        width: 100%;
+        height: 40%;
+    }
+    #right img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+}
